@@ -15,7 +15,7 @@ def play_game_2(min_x=0, max_x=20):
     x = random.randint(min_x,max_x)
     sequence.append(x)
     game_ended = False
-
+    
     while game_ended == False:
         print()
         print(f"The current value is: {sequence[-1]}")
