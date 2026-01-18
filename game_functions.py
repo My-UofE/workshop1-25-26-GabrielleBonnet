@@ -18,8 +18,8 @@ def process_guess(letter, board, word):
         for i in range(len(word)):
             if word[i] == letter:
                 board[i] = letter               
-        print(f"Well done! '{letter}' is in the word")
+        print(f"Well done! "{letter}" is in the word")
         return True
     else:
-        print(f"Sorry, '{letter}' is not in the word")
+        print(f"Sorry, "{letter}" is not in the word")
         return False
