@@ -3,8 +3,7 @@ import random
 # function to be used by game_1: Guess the Number
 def pick_value(poss_values):
     middle_value = len(poss_values) // 2
-    x = random.choice(poss_values)   
-    return x
+    return poss_values[middle_value]
 
 # function to be used in game_2: Higher or Lower
 def check_higher_lower(current_val, next_val, user_input):
@@ -18,8 +17,7 @@ def process_guess(letter, board, word):
     if letter in word:
         for i in range(len(word)):
             if word[i] == letter:
-                board[i] = letter
-                
+                board[i] = letter               
         print(f"Well done! '{letter}' is in the word")
         return True
     else:
