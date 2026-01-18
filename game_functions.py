@@ -20,7 +20,6 @@ def process_guess(letter, board, word):
            if word[i] == letter:
                board[i] = letter
 
-
        print(f"Well done! '{letter}' is in the word")
        return True
    else:
